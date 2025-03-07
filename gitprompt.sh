@@ -503,7 +503,7 @@ function get_branch_prefix() {
     local DETACHED_HEAD="${2}"
 
     case "$GIT_BRANCH" in
-      ${GIT_PROMPT_MASTER_BRANCHES})
+      master|main)
         local IS_MASTER_BRANCH=1
         ;;
       *)
